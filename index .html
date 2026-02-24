@@ -23,7 +23,9 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<script>
+document.addEventListener("contextmenu", event => event.preventDefault());
+</script>
 <header>
     <div class="logo">🌍 Tamchekett Tourism</div>
     <div class="lang-switch">
@@ -196,4 +198,5 @@ el.innerText = el.getAttribute("data-"+lang);
 </script>
 
 </body>
+
 </html>
