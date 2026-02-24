@@ -1,5 +1,164 @@
  [index .html](https://github.com/user-attachments/files/25514542/index.html)
-<!DOCTYPE html>
+<!DOCTYPE html>[style.css](https://github.com/user-attachments/files/25515107/style.css)*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#338645;
+line-height:1.7;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 10%;
+background:#0f2027;
+color:rgb(43, 102, 132);
+}
+
+.lang-switch button{
+margin-left:5px;
+padding:6px 10px;
+border:none;
+background:#00c3ff;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.hero{
+height:80vh;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url(images/0.jpeg) center/cover;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.section{
+padding:60px 10%;
+text-align:center;
+}
+
+.bg-light{
+background:#eef2f7;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.card{
+background:rgba(71, 119, 86, 0);
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(54, 51, 51, 0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:400px;
+margin:auto;
+}
+
+input,textarea{
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+button{
+padding:12px;
+border:none;
+background:#2c5364;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+/* Gallery */
+.gallery h3{
+margin-top:40px;
+margin-bottom:15px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery-grid img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+/* Lightbox */
+#lightbox{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
+z-index:1000;
+}
+
+#lightbox img{
+max-width:80%;
+max-height:80%;
+border-radius:10px;
+}
+button:hover{
+background:#1c3b4a;
+}
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:30px;}
+header{flex-direction:column;}
+}
+
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
