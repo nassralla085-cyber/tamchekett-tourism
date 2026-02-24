@@ -1,4 +1,4 @@
-[index .html](https://github.com/user-attachments/files/25527136/index.html)
+(https://github.com/user-attachments/files/25527136/index.html)
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -195,6 +195,3 @@ el.innerText = el.getAttribute("data-"+lang);
 });
 }
 </script>
-
-</body>
-</html>
