@@ -152,8 +152,11 @@ text-align:center;
 padding:20px;
 margin-top:40px;
 }
-
+img {
+pointer-events: none;
+}
 @media(max-width:768px){
 .hero h1{font-size:30px;}
 header{flex-direction:column;}
+
 }
